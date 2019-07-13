@@ -44,7 +44,7 @@ func main() {
 			// break problemLoop
 			return
 		case answer := <-answerCh:
-			if answer == p.a {
+			if strings.TrimSpace(answer) == p.a {
 				correct++
 			}
 		}
